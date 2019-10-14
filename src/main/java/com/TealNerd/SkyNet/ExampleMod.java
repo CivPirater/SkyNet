@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.TealNerd.SkyNet;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.UUID;
 
 import org.lwjgl.input.Keyboard;
 
-import com.example.examplemod.commands.*;
+import com.TealNerd.SkyNet.commands.*;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.network.NetworkPlayerInfo;

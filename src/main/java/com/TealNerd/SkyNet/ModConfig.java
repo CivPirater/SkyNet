@@ -7,14 +7,14 @@ import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Config(modid = "soviamod")
-@LangKey("soviamod" + ".config.title")
+@Config(modid = "skynetplus")
+@LangKey("skynetplus" + ".config.title")
 public final class ModConfig {
 
-    @LangKey("soviamod" + ".config.group")
+    @LangKey("skynetplus" + ".config.group")
     public static String group = "";
 
-    @Mod.EventBusSubscriber(modid = "soviamod")
+    @Mod.EventBusSubscriber(modid = "skynetplus")
     private static class ConfigEventSubscriber {
 
         /**
@@ -24,8 +24,8 @@ public final class ModConfig {
          */
         @SubscribeEvent
         public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
-            if (event.getModID().equals("soviamod")) {
-                ConfigManager.sync("soviamod", Config.Type.INSTANCE);
+            if (event.getModID().equals("skynetplus")) {
+                ConfigManager.sync("skynetplus", Config.Type.INSTANCE);
             }
         }
     }

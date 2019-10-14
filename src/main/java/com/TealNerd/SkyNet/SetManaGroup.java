@@ -1,4 +1,4 @@
-package com.example.examplemod.commands;
+package com.TealNerd.SkyNet;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
@@ -10,7 +10,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 
 import java.util.List;
-import com.example.examplemod.*;
+import com.TealNerd.SkyNet*;
 
 public class SetManaGroup extends CommandBase {
 	
@@ -32,7 +32,7 @@ public class SetManaGroup extends CommandBase {
 	@Override
 	public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
 		ConfigHandler.writeConfig("Strings", "ManaGroup", args[0]);
-		mc.player.sendMessage(new TextComponentString(TextFormatting.DARK_PURPLE + "[SoviaMod] "+ TextFormatting.GRAY + "Mana Group Set: " + args[0]));
+		mc.player.sendMessage(new TextComponentString(TextFormatting.DARK_PURPLE + "[SkyNet] "+ TextFormatting.GRAY + "Mana Group Set: " + args[0]));
 		System.out.println(ConfigHandler.getString("Strings", "ManaGroup"));
 
 	}

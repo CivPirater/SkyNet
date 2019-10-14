@@ -10,7 +10,7 @@ import java.util.UUID;
 
 import org.lwjgl.input.Keyboard;
 
-import com.TealNerd.SkyNet.commands.*;
+import com.TealNerd.SkyNet*;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.network.NetworkPlayerInfo;
@@ -41,7 +41,7 @@ import net.minecraftforge.fml.common.gameevent.InputEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
  
-@Mod(modid="soviamod", name="SkyNet", version="1.1.0")
+@Mod(modid="skynetplus", name="SkyNet", version="1.1.0")
 
 
 public class ExampleMod {

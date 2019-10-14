@@ -1,4 +1,4 @@
-package com.example.examplemod.commands;
+package com.TealNerd.SkyNet;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
@@ -10,7 +10,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 
 import java.util.List;
-import com.example.examplemod.*;
+import com.TealNerd.SkyNet*;
 
 public class SetJoinMessage extends CommandBase {
 	
@@ -39,7 +39,7 @@ public class SetJoinMessage extends CommandBase {
 	    }
 	    message = strBuilder.toString();
 		ConfigHandler.writeConfig("Strings", args[0], message.substring(args[0].length()+1));
-		mc.player.sendMessage(new TextComponentString(TextFormatting.DARK_PURPLE + "[SoviaMod] "+ TextFormatting.GRAY + "Set " + args[0] + " join message to: "+ConfigHandler.getString("Strings", args[0])));	
+		mc.player.sendMessage(new TextComponentString(TextFormatting.DARK_PURPLE + "[SkyNet] "+ TextFormatting.GRAY + "Set " + args[0] + " join message to: "+ConfigHandler.getString("Strings", args[0])));	
 	}
 	
 	

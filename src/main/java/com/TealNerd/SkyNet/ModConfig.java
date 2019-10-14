@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.TealNerd.SkyNet;
 
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.Config.LangKey;
